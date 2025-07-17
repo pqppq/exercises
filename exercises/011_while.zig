@@ -16,12 +16,13 @@
 //     a != b   means "a does not equal b"
 //
 const std = @import("std");
+const math = std.math;
 
 pub fn main() void {
     var n: u32 = 2;
 
     // Please use a condition that is true UNTIL "n" reaches 1024:
-    while (???) {
+    while (n < math.pow(u16, 2, 10)) {
         // Print the current number
         std.debug.print("{} ", .{n});
 
